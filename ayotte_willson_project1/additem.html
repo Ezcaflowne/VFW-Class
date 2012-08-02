@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- 
+VFW Week 1 Project
+Willson Ayotte
+Term 1208 
+ -->
+<html>
+	<head>
+		<meta charset="utf-8" /><!-- type of charset -->
+		<meta name="description" content="Add or Edit apartments to be maintenaced." /><!-- html document description -->
+		<meta name="robots" content="index, follow" /><!-- for search engines -->
+		<meta name="viewport" content="user-scalable=no, width=device-width" /><!-- optd for iphone -->
+		<meta name="viewport" content="target-densitydpi=device-dpi" /><!-- optd for android -->
+		<meta name="HandheldFriendly" content="True" /><!-- optd for other phones -->
+		<meta name="MobileOptimized" content="320" /><!-- opted for other phones -->
+		<title>Add/Edit Apartments</title><!-- title of page, shows in a tab or head of browser -->
+	</head>
+	<body>
+		<h1>Add Vacant Aparments</h1><!-- header title of html page -->
+		<form action="#" method="post">
+			<fieldset><!-- start of the apartment info field -->
+				<legend>Enter Apartment Information:</legend>
+				<label>Type:</label>
+				<select>
+   					<optgroup label="Apartment Type"><!-- start of option to what type of vacant apartment it is -->
+	 					<option>Vacant Available</option>
+	 					<option>Vacant Rented</option>
+	 					<option>Notice Availible</option>
+   					</optgroup><!-- end of option to what type of apartment it is -->
+				</select><br /><br />
+				<label for="aptnum">Number:</label><input type="text" id="aptnum" /><br /><!-- number of apartment -->
+				<label for="aptsize">Size:</label><input type="text" id="aptsize" placeholder="bedXbath" /><br /><!-- size of apartment in BedxBath format -->
+				<label for="vacdate">Vacate Date:</label><input type="date" id="vacdate" /><br /><!-- vacate date of apartment -->
+				<label for="rdydate">Ready Date:</label><input type="date" id="rdydate" /><br /><br /><!-- ready date for the apartment -->
+				<label for="ispower">Power?</label><input type="checkbox" id="ispower" /><br /><!-- is the power on in the aprtment -->
+				<label for="iswhitelock">Whitelock?</label><input type="checkbox" id="iswhitelock" /><br /><br /><!-- is the apartment on whitelock -->
+				<label for="condition">Condition</label><br />Bad<input type="range" id="condition" />Good<br /><br /><!-- the condition of apartment on a bad to good scale -->
+				<label>Additional Comments:</label><br /><textarea placeholder="Type comments here..."></textarea><!-- add aditional comments field -->
+			</fieldset><!-- end of apartment info field -->
+			<input type="submit" value="Submit Information" id="sbutton" /><br /><!-- submit button to submit the data into the database -->
+			<a href="#">Clear Stored Data</a><br /><a href="#">Display Date</a><!-- links to clear stored data and to display data in database -->
+			<input type="hidden" value="today" />
+		</form>
+	Terms & Conditions
+	&copy;2012 Ezcaflowne. All Rights Reserved.<!-- my personal copywrite with my online name -->
+	</body>
+</html>
