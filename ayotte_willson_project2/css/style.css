@@ -1,0 +1,103 @@
+html {
+    background-color: darkblue;
+}
+body {
+    font-family: "Lucida Grande", "Arial", sans-serif;
+    margin: 10px auto;
+    padding: 24px;
+    background-color: white;
+    color: #4D4B39;
+    max-width: 260px;
+    border: 8px solid lightblue;
+    line-height: 20px;
+}
+
+h1 {
+    background-color: darkblue;
+    color: lightblue;
+    font-size: 145%;/*font size in percent*/
+    padding: 20px;/*how much space around text on all sides*/
+    margin: -25px -24px 25px -24px; /*(x)top , (x)left , (x)bottom , (x)right*/
+}
+
+h2 {
+    background-color: darkblue;
+    color: lightblue;
+    font-size: 145%;/*font size in percent*/
+    padding: 20px;/*how much space around text on all sides*/
+    margin: 45px -24px 25px -24px; /*(x)top , (x)left , (x)bottom , (x)right*/
+}
+
+p {
+    color: gold;
+    font-weight: bold;
+    text-align: center;
+}
+
+form {
+    color: gold;
+}
+
+legend{
+    color: darkblue;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+label {
+    display: block;
+}
+
+select {
+    font-size: 14px
+}
+
+input {
+    font-size: 14px
+
+}
+
+input:focus, 
+textarea:focus, 
+#date:focus {
+background-color: gold;
+}
+
+#condition{
+    width: 100px;
+}
+
+textarea {
+    font-size: 14px;
+    width: 170px;
+    height: 120px;
+}
+
+li {
+    color: darkblue;
+}
+
+a:visited{color:gold;}
+
+#copyWright{color:lightblue;}
+
+#displayLink:visited, #clearLink:visited {
+    color: darkblue;
+}
+
+/*found this nice button tutorial on a webpage that explained why the last line in this button style was used. 
+Because if it wasnt used the button would not change style at all and mobile Safari will change the appearance 
+of buttons & controls to resemble a native Apple control*/
+input[type="submit"] {
+    background: darkblue;
+    width: 100px;
+    padding: 9px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border: none;
+    color: lightblue;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -webkit-appearance: none;
+}
