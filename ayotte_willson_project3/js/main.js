@@ -1,7 +1,7 @@
 // Name: Willson Ayotte
-// Date: Aug 3rd 2012
+// Date: Aug 16th 2012
 // Document: Project 3 VFW 1208 
-// Description: Data base for saved data, get data, and clear data.
+// Description: Data base for saved data, get data, and clear data. CRUD
 
 window.addEventListener("DOMContentLoaded", function(){
 
@@ -52,6 +52,7 @@ window.addEventListener("DOMContentLoaded", function(){
                 $('displayLink').style.display = "none";
                 $('addNew').style.display = "inline";
                 $('submit').style.display = "none";
+                $('copyWright').style.display = "none";
                 break;
             case "off":
                 $('apartmentForm').style.display = "block";
@@ -231,22 +232,23 @@ window.addEventListener("DOMContentLoaded", function(){
         var messageAry = [];
         // Group validation
         if(getType.value === "--Apartment Type--"){
-            var typeError = "Please choose an Apartment Type.";
+            var typeError = "*Select an Apartment Type.";
             getType.style.border = "1px solid red";
             messageAry.push(typeError);
         }
 
         // Apartment Number Validation
-        if(getNum.value === ""){
-            var aptNumError = "Please Enter an Apartment Number.";
+        var re1 = /^\d+$/;
+        if(!(re1.exec(getNum.value))){
+            var aptNumError = "*Enter an Apartment Number.";
             getNum.style.border = "1px solid red";
             messageAry.push(aptNumError);
         }
        
         // Apartment Size Validation
-        var re = /^\dx\d$/;
-        if(!(re.exec(getSize.value))){
-            var getSizeError = "Please enter Apartment Size in a numxnum format.";
+        var re2 = /^\dx\d$/;
+        if(!(re2.exec(getSize.value))){
+            var getSizeError = "*Enter Apartment Size in a numxnum format.";
             getSize.style.border = "1px solid red";
             messageAry.push(getSizeError);
         }
@@ -257,6 +259,9 @@ window.addEventListener("DOMContentLoaded", function(){
                 var txt = document.createElement('li');
                 txt.innerHTML = messageAry[i];
                 errMsg.appendChild(txt);
+                // Added line break inbetween error message array.
+                var breakTag = document.createElement('br');
+                errMsg.appendChild(breakTag);
             }
             event.preventDefault();
             return false;

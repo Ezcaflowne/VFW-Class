@@ -5,7 +5,7 @@ body {
     font-family: "Lucida Grande", "Arial", sans-serif;
     margin: 10px auto;
     padding: 24px;
-    background-color: white;
+    background-color: grey;
     color: #4D4B39;
     max-width: 260px;
     border: 8px solid lightblue;
@@ -18,6 +18,7 @@ h1 {
     font-size: 145%;/*font size in percent*/
     padding: 20px;/*how much space around text on all sides*/
     margin: -25px -24px 25px -24px; /*(x)top , (x)left , (x)bottom , (x)right*/
+    outline: solid black 1px;
 }
 
 h2 {
@@ -25,7 +26,7 @@ h2 {
     color: lightblue;
     font-size: 145%;/*font size in percent*/
     padding: 20px;/*how much space around text on all sides*/
-    margin: 45px -24px 25px -24px; /*(x)top , (x)left , (x)bottom , (x)right*/
+    margin: 45px -24px 25px -24px; /*(x)top , (x)right , (x)bottom , (x)left*/
 }
 
 p {
@@ -34,22 +35,33 @@ p {
     text-align: center;
 }
 
-#errors{
-    color: red;
+span{
+   color: red;
 }
 
-form {
-    color: gold;
+
+#apartmentFieldset{
+    background-color: lightgrey;
 }
 
 legend{
-    color: darkblue;
+    background-color: darkblue;
+    color: lightblue;
     font-weight: bold;
     font-size: 15px;
 }
 
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-left: -40px;
+}
+
 label {
     display: block;
+    color: black;
 }
 
 select {
@@ -58,7 +70,7 @@ select {
 
 input {
     font-size: 14px;
-    width: 170px;
+    width: 200px;
 }
 
 input:focus, 
@@ -67,34 +79,53 @@ textarea:focus,
 background-color: gold;
 }
 
+#aptType{
+    width: 215px;
+}
+
 #condition{
-    width: 100px;
+    width: 145px;
 }
 
 textarea {
     font-size: 14px;
-    width: 170px;
-    height: 120px;
+    width: 210px;
+    height: 100px;
 }
 
-li {
-    color: darkblue;
+div {
+    background-color: white;
+    padding-left: 5px;
 }
 
+#items{
+    color: blue;
+    outline: solid black 2px;
+}
+
+
+nav {
+    background: white;
+    outline: solid black 2px;
+    margin-right: 100px
+}
+
+.errormsg{
+    color: red;
+}
+
+a:link{color:blue;}
 a:visited{color:gold;}
 
 #copyWright{color:lightblue;}
 
-#displayLink:visited, #clearLink:visited {
-    color: darkblue;
-}
 
 /*found this nice button tutorial on a webpage that explained why the last line in this button style was used. 
 Because if it wasnt used the button would not change style at all and mobile Safari will change the appearance 
 of buttons & controls to resemble a native Apple control*/
 input[type="submit"] {
     background: darkblue;
-    width: 260px;
+    width: 255px;
     padding: 9px;
     font-size: 14px;
     letter-spacing: 2px;
