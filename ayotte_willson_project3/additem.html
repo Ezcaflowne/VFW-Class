@@ -21,8 +21,8 @@ Term:  1208
 		<form action="#" method="post" id="apartmentForm">
 			<fieldset id="apartmentFieldset"><!-- start of the apartment info field -->
 				<legend>Enter Apartment Information:</legend>
-				<span>* fields are required. *</span>
-				<ul id="errors"></ul>
+				<span> *fields are required.*</span>
+				<ul class="errormsg" id="errors"></ul>
 				<ul>
 					<li id="select"><label for="aptType">*Type:</label>
 					<li><label for="aptNum">*Number:</label><input type="text" id="aptNum" /><br /> <!-- number of apartment -->
@@ -38,9 +38,11 @@ Term:  1208
 		</form>
 		<input type="submit" value="Submit Apartment" id="submit" /><br /><br /><!-- submit button to submit the data into the database -->
 			<nav>
-				<a href="#" id="displayLink">Display Data</a><br /><!-- links to clear stored data and to display data in database -->
-				<a href="#" id="clearLink">Clear Stored Data</a><br />
-				<a href="additem.html" id="addNew" style="display:none;">Add New Apartment</a>
+				<ul>
+					<li><a href="#" id="displayLink">Display Apartments</a></li><!-- links to clear stored data and to display data in database -->
+					<li><a href="#" id="clearLink">Clear Aparetments</a></li>
+					<li><a href="additem.html" id="addNew" style="display:none;">Add New Apartment</a></li>
+				</ul>
 			</nav>
 			<input type="hidden" value="today" id="today"/><br />
 	<label id="copyWright"><small>Terms & Conditions
