@@ -1,0 +1,167 @@
+/*Name: Willson Ayotte
+Date: Aug 19th, 2012
+Document: CSS for Apartment Application
+Decription: For VFW 1208
+*/
+
+html {
+    background-color: darkblue;
+}
+body {
+    font-family: "Lucida Grande", "Arial", sans-serif;
+    margin: 10px auto;
+    padding: 24px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#000));
+    color: #4D4B39;
+    max-width: 260px;
+    border: 8px solid lightblue;
+    line-height: 20px;
+}
+
+h1 {
+    background: -webkit-gradient(linear, left top, right bottom, from(#0b88cb), to(#004068));
+    color: lightblue;
+    font-size: 145%;/*font size in percent*/
+    text-shadow: 2px 2px #000000;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    padding: 20px;/*how much space around text on all sides*/
+    margin: -25px -24px 25px -24px; /*(x)top , (x)left , (x)bottom , (x)right*/
+    
+}
+
+h2 {
+    background: -webkit-gradient(linear, left top, right bottom, from(#0b88cb), to(#004068));
+    color: lightblue;
+    font-size: 145%;/*font size in percent*/
+    text-shadow: 2px 2px #000000;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    padding: 20px;/*how much space around text on all sides*/
+    margin: 45px -24px 25px -24px; /*(x)top , (x)right , (x)bottom , (x)left*/
+}
+
+p {
+    color: gold;
+    font-weight: bold;
+    text-align: center;
+}
+
+span{
+   color: red;
+}
+
+
+#apartmentFieldset{
+    background-color: lightgrey;
+    border-radius: 10px;
+
+}
+
+legend{
+    background: -webkit-gradient(linear, left top, right bottom, from(#0b88cb), to(#004068));
+    color: lightblue;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    text-shadow: 2px 2px #000000;
+    border-radius: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-left: -40px;
+}
+
+label {
+    display: block;
+    color: black;
+}
+
+select {
+    font-size: 14px;
+}
+
+input {
+    font-size: 14px;
+    width: 200px;
+}
+
+input:focus, 
+textarea:focus, 
+#date:focus {
+background-color: gold;
+}
+
+#aptType{
+    width: 215px;
+}
+
+#condition{
+    width: 145px;
+}
+
+textarea {
+    font-size: 14px;
+    width: 210px;
+    height: 100px;
+}
+
+div {
+    background: -webkit-gradient(linear, left top, right bottom, from(white), to(white));
+    border-radius: 10px;
+    padding-left: 5px;
+}
+
+div ul {
+    border-bottom: solid black 1px;
+    /*Play with this<<<<<<<<<<<<<<<<<<<<<<<<<*/
+}
+
+#items{
+    color: #004068;
+}
+
+
+nav {
+    display: inline;
+    text-align: center;   
+}
+
+.errormsg{
+    color: red;
+}
+
+a:link{color:blue;}
+a:visited{color:purple;}
+
+#copyWright{color:lightblue;}
+
+
+/*found this nice button tutorial on a webpage that explained why the last line in this button style was used. 
+Because if it wasnt used the button would not change style at all and mobile Safari will change the appearance 
+of buttons & controls to resemble a native Apple control*/
+input[type="submit"] {
+    background: -webkit-gradient(linear, center top, center bottom, from(#0b88cb), to(#004068));
+    width: 255px;
+    padding: 9px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: lightblue;
+    text-shadow: 2px 2px #000000;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -webkit-appearance: none;
+    box-shadow: 
+    0 1px 2px #fff, 
+    0 -1px 1px #666, 
+    inset 0 -1px 1px rgba(0,0,0,0.5), 
+    inset 0 1px 1px rgba(255,255,255,0.8); 
+}
